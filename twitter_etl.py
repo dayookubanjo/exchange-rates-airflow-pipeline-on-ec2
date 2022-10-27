@@ -6,10 +6,10 @@ import s3fs
 
 
 def run_exchange_rate_etl():
-    access_key = "Gtb6ocARntFBYecjN9aF9qKmg"
-    access_secret = "YqH9XeymaRvPAP6hQbO5wBVg6VIaQUxw78Gyd79mcRm1mMdc91"
-    consumer_key = "221341555-9KuCS5tRSM17UByPFbBGnjsyzURnjMDyxJrAMsJf"
-    consumer_secret = "1SJCQAczzYUTIbEvkhpHdIJ0GzTuadwT7fdssBWOg0pYS"
+    access_key = "${ACCESS_KEY}"
+    access_secret = "${ACCESS_SECRET}"
+    consumer_key = "${CONSUMER_KEY}"
+    consumer_secret = "${CONSUMER_SECRET}"
 
     auth = tweepy.OAuthHandler(access_key, access_secret)
     auth.set_access_token(consumer_key, consumer_secret)

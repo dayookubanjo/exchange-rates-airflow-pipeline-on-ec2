@@ -11,8 +11,8 @@ Check that airflow is installed: airflow
 To run airflow: airflow standalone
 
 
-Login with username: admin  password: ptZBcPt5vKSzSQDR
+Login with username: "${AIRFLOW_USERNAME}"  password: "${AIRFLOW_PASSWORD}"
 
-http://ec2-3-99-230-110.ca-central-1.compute.amazonaws.com:8080
+http://${INSTANCE_PUBLIC_DNS}:8080
 
-ssh ubuntu@ec2-3-99-230-110.ca-central-1.compute.amazonaws.com
+ssh ubuntu@${INSTANCE_PUBLIC_DNS}
