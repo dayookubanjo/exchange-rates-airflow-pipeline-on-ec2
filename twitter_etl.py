@@ -42,5 +42,6 @@ def run_exchange_rate_etl():
 
     df = pd.DataFrame(tweet_list)
     df.to_csv('exchange_rates_tweets.csv')
+    # df.to_csv('s3://exchange-rates-airflow/exchange_rates_tweets.csv')
 
-run_exchange_rate_etl()
+# run_exchange_rate_etl()

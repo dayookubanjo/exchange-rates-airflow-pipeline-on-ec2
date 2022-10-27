@@ -1,3 +1,18 @@
-pandas
-tweepy
-s3fs
+# On the EC2 server:
+
+sudo apt-get update
+sudo apt install python3-pip
+sudo pip install apache-airflow
+sudo pip install pandas
+sudo pip install s3fs
+sudo pip install tweepy
+
+Check that airflow is installed: airflow
+To run airflow: airflow standalone
+
+
+Login with username: admin  password: ptZBcPt5vKSzSQDR
+
+http://ec2-3-99-230-110.ca-central-1.compute.amazonaws.com:8080
+
+ssh ubuntu@ec2-3-99-230-110.ca-central-1.compute.amazonaws.com
